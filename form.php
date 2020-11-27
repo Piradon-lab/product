@@ -29,7 +29,7 @@
                     <h3 style='color:white;'>Price:</h3>
                 </label>
                 <div class="col-sm-10">
-                    <textarea rows="10" col="20" class="form-control" name="Price" id="Price" placeholder="Enter Price"></textarea>
+                    <br><input type="text" class="form-control" name="Price" id="Price" placeholder="Enter Price">
                 </div>
             </div>
             <div class="form-group form-group-sm">
