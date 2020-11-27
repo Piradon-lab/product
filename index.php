@@ -74,7 +74,8 @@
                 <td><?php echo $Result['Product']; ?></td>
                 <td><?php echo $Result['Price']; ?></td>
                 <td><?php echo $Result['Amount']; ?></td>
-                <td><?php echo $Result['Total']; ?><a href = "remove.php?delete_id=<?php echo $Result['ID']; ?>"><button type="button" class="btn btn-primary">Delete</button></td>
+                <td><?php echo $Result['Total']; ?></td>
+                <td><?php echo $Result['Manage']; ?><a href = "remove.php?delete_id=<?php echo $Result['ID']; ?>"><button type="button" class="btn btn-primary">Delete</button></td>
             </tr>
         <?php
         }
