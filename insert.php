@@ -22,9 +22,10 @@
     $Product = $_POST['Product'];
     $Price = $_POST['Price'];
     $Amount = $_POST['Amount'];
+    $Total = $_POST['Amount'*'Price];
 
 
-    $sql = "INSERT INTO sinka (Product , Price , Amount) VALUES ('$Product', '$Price', '$Amount')";
+    $sql = "INSERT INTO sinka (Product , Price , Amount, Total) VALUES ('$Product', '$Price', '$Amount', '$Total')";
 
 
     if (mysqli_query($conn, $sql)) {
