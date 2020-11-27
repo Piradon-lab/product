@@ -22,7 +22,7 @@
     $Product = $_POST['Product'];
     $Price = $_POST['Price'];
     $Amount = $_POST['Amount'];
-    $Total = $_POST[$Price + $Amount];
+    $Total = $_POST['$Price' * '$Amount'];
 
 
     $sql = "INSERT INTO sinka (Product , Price , Amount, Total) VALUES ('$Product', '$Price', '$Amount', '$Total')";
