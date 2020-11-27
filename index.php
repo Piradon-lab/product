@@ -22,38 +22,45 @@
     <table class="table table-primary table table-boarded">
         <tr>
             <p class="text-white">
-                <th width="20%">
+                <th width="15%">
                     <div align="center">
                         <h4>
                             <p class="text-white">id </p>
                         </h4>
                     </div>
                 </th>
-                <th width="20%">
+                <th width="15%">
                     <div align="center">
                         <h4>
                             <p class="text-white">Product </p>
                         </h4>
                     </div>
                 </th>
-                <th width="20%">
+                <th width="15%">
                     <div align="center">
                         <h4>
                             <p class="text-white">Price </p>
                         </h4>
                     </div>
                 </th>
-                <th width="20%">
+                <th width="15%">
                     <div align="center">
                         <h4>
                             <p class="text-white">Amount </p>
                         </h4>
                     </div>
                 </th>
-                <th width="20%">
+                <th width="15%">
                     <div align="center">
                         <h4>
                             <p class="text-white">Total </p>
+                        </h4>
+                    </div>
+                </th>
+                <th width="15%">
+                    <div align="center">
+                        <h4>
+                            <p class="text-white">Manage </p>
                         </h4>
                     </div>
                 </th>
@@ -67,7 +74,7 @@
                 <td><?php echo $Result['Product']; ?></td>
                 <td><?php echo $Result['Price']; ?></td>
                 <td><?php echo $Result['Amount']; ?></td>
-                <td><?php echo $Result['Total']; ?></td>
+                <td><?php echo $Result['Total']; ?><a href = "remove.php?delete_id=<?php echo $Result['ID']; ?>"><button type="button" class="btn btn-primary">Delete</button></td>
             </tr>
         <?php
         }
