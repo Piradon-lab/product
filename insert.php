@@ -24,7 +24,7 @@
     $Amount = $_POST['Amount'];
 
 
-    $sql = "INSERT INTO guestbook (Product , Price , Amount) VALUES ('$Product', '$Price', '$Amount')";
+    $sql = "INSERT INTO sinka (Product , Price , Amount) VALUES ('$Product', '$Price', '$Amount')";
 
 
     if (mysqli_query($conn, $sql)) {
